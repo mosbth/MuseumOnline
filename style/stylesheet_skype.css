@@ -1,0 +1,28 @@
+/* -------------------------------------------------------------------------------------
+/* 
+/* Stylesheet.
+/* 
+/* A skype style. Inspired by skype.com
+*/
+
+/* -------------------------------------------------------------------------------------
+/* Import standard style */
+@import url(stylesheet.css);
+@import url(stylesheet_grey.css);
+
+/* -------------------------------------------------------------------------------------
+/* Make some changes */
+body {font-family:Helvetica,Arial,sans-serif;}
+header#top nav {background:#E5F7FD;border-bottom:1px solid #7FD7F7;padding:0.5em;}
+header#top nav a {color:#636363;font:bold 16px Helvetica,Arial,sans-serif;padding:0.5em;text-decoration:none;}
+header#top nav a:hover {
+	color:#FFFFFF;background:#7FD7F7;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+footer#bottom {background:#E5F7FD;border-top:1px solid #7FD7F7;}

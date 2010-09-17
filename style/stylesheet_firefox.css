@@ -1,0 +1,23 @@
+/* -------------------------------------------------------------------------------------
+/* 
+/* Stylesheet.
+/* 
+/* A Firefox style. Inspired by firefox.com
+*/
+
+/* -------------------------------------------------------------------------------------
+/* Import standard style */
+@import url(stylesheet.css);
+@import url(stylesheet_grey.css);
+
+/* -------------------------------------------------------------------------------------
+/* Make some changes */
+body {background:url(../img/firefox-bg.jpg) no-repeat;font-family:georgia,serif;}
+
+header#top nav {background:#1D4060;border-bottom:1px solid #7FD7F7;padding:15px;}
+header#top nav a {color:#FFFFFF;font:bold 12px Verdana;padding:15px;text-decoration:none;}
+header#top nav a:hover {
+	color:#FFFFFF;background:#31526F;
+}
+
+footer#bottom {background:#E5F7FD;border-top:1px solid #7FD7F7;}

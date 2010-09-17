@@ -1,0 +1,30 @@
+/* -------------------------------------------------------------------------------------
+/* 
+/* Stylesheet.
+/* 
+/* A SKKF style. Inspired by skkf.se
+*/
+
+/* -------------------------------------------------------------------------------------
+/* Import standard style */
+@import url(stylesheet.css);
+@import url(stylesheet_grey.css);
+
+/* -------------------------------------------------------------------------------------
+/* Make some changes */
+body {background:#FFFDF1;font-family:Arial,sans-serif;}
+
+header#top nav {background:white;border-bottom:5px double black;border-top:1px solid black;padding:5px;}
+header#top nav a {
+	color:#CCCCCC;
+	font:bold 10px Georgia,serif;
+	padding:5px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+header#top nav a:after {content:" |";}
+header#top nav a:hover {background:white;color:#000000;}
+
+h1,h2,h3,h4,h5,h6 {font-family:Georgia,serif;}
+
+footer#bottom {background:#FFFDF1;border-top:5px double black;}

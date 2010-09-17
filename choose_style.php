@@ -39,6 +39,9 @@
 $styles = Array(
 		"plain" 		=> Array("title" => "Mos Plain", 					"path" => "style/stylesheet.css"),	
 		"standard" 	=> Array("title" => "Mos Standard Grey", 	"path" => "style/stylesheet_grey.css"),	
+		"skkf" 			=> Array("title" => "Mos SKKF", 					"path" => "style/stylesheet_skkf.css"),	
+		"firefox" 	=> Array("title" => "Mos Firefox", 				"path" => "style/stylesheet_firefox.css"),	
+		"skype" 		=> Array("title" => "Mos Skypish", 				"path" => "style/stylesheet_skype.css"),	
 		"red" 			=> Array("title" => "Mos Standard Red", 	"path" => "style/stylesheet_red.css"),	
 		"bth" 			=> Array("title" => "Mos BTH-ish", 				"path" => "style/stylesheet_bth.css"),	
 		"debug" 		=> Array("title" => "Mos Debug", 					"path" => "style/stylesheet_debug.css"),	
