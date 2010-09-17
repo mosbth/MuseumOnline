@@ -1,0 +1,47 @@
+/* -------------------------------------------------------------------------------------
+/* 
+/* Stylesheet mos default grey.
+ */
+
+/* -------------------------------------------------------------------------------------
+/* Import standard style */
+@import url(stylesheet.css);
+
+/* -------------------------------------------------------------------------------------
+/* Make some changes */
+body 	{font-family:Georgia, serif;color:#333333;}
+
+/* The navbar */
+header#top nav {
+	background: #e3e3df;
+	border-bottom: 2px solid #999999;
+}
+header#top nav a {
+	color: #555555;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration:none; 
+}
+header#top nav a:hover   { color: #111111; background: #999999; }
+
+/* Style for byline & signature */
+footer.byline {
+	border-top: 1px dashed #999999;
+	color: #555555;
+	font-size: smaller;
+}
+
+/* Style for a links */
+a:hover   { text-decoration: none;  color: #333333; background: #e3e3df;}
+
+/* Style for the footer and related footer elements */
+footer#bottom {
+	border-top: 1px solid #999999;
+	background: #e3e3df;
+	color: #999999;
+}
+
+footer#bottom nav a { 
+	font: 0.8em Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+footer#bottom nav a:hover   { text-decoration:underline;  color: #333333; background: none;}

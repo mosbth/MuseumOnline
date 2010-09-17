@@ -1,0 +1,243 @@
+/* -------------------------------------------------------------------------------------
+/* 
+/* Stylesheet plain with some structure.
+ */
+
+/* -------------------------------------------------------------------------------------
+/* Some generic style that is valid for whole stylesheet */
+body 	{margin:0;padding:0;}
+img 	{margin:0;padding:0;border:0;}
+
+
+/* -------------------------------------------------------------------------------------
+/* Top of page with logo and navigation */
+
+/* Change to block since inline style adds line-height for qpgy and euqals */
+header#top img	{display:block;} 
+
+/* For style chooser */
+header#top form.choose-style 				{float:right;padding:0.5em 1em 0 0;}
+header#top form.choose-style label 	{font:smaller Arial, Helvetica, sans-serif;}
+
+/* The navbar */
+header#top nav {
+	display: block;
+	padding: 0.2em 1em 0 1em;
+}
+header#top nav a {
+	padding: 0.3em 1em 0 1em;
+}
+header#top nav a:link    { }
+header#top nav a:visited { }
+header#top nav a:hover   { }
+header#top nav a:active  { }
+
+/* Keep current choice/link highlighted */
+body#me     a#hem-     { color:#f5f5f5; background:#999999; }
+body#report a#excibitions- { color:#f5f5f5; background:#999999; }
+body#html20 a#articles- { color:#f5f5f5; background:#999999; }
+body#css20  a#blog-  { color:#f5f5f5; background:#999999; }
+body#forms  a#forum-  { color:#f5f5f5; background:#999999; }
+body#proj   a#about-   { color:#f5f5f5; background:#999999; }
+
+
+/* -------------------------------------------------------------------------------------
+/* Subnavigation */
+nav#project,
+nav#begravning {
+	display:block;
+	padding:0.0em 0.3em 0.3em 0.3em;
+	background:#f1f1ef;
+}
+
+nav#project a,
+nav#begravning a {
+	padding: 0.1em 1em 0.4em 1em;
+	color: #555555;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: smaller;
+	text-decoration:none; 
+}
+nav#project a:after,
+nav#begravning a:after {
+	content: " | ";
+}
+
+/* Project submenu: Keep current choice/link highlighted */
+body#proj-proj   a#proj-,
+body#proj-proj   a#proj-proj- { color:#f5f5f5; background:#999999; }
+body#proj-kund   a#proj-,
+body#proj-kund   a#proj-kund- { color:#f5f5f5; background:#999999; }
+body#proj-lev  	 a#proj-,
+body#proj-lev  	 a#proj-lev-	{ color:#f5f5f5; background:#999999; }
+
+/* Museum submenu: Keep current choice/link highlighted */
+body#begr-seder   a#begr-,
+body#begr-seder   a#begr-seder- { color:#f5f5f5; background:#999999; }
+body#begr-obj   	a#begr-,
+body#begr-obj   	a#begr-obj-		{ color:#f5f5f5; background:#999999; }
+body#begr-form   	a#begr-,
+body#begr-form   	a#begr-form-	{ color:#f5f5f5; background:#999999; }
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for main content of the page */
+header {display:block;}
+
+div#wrap {overflow:auto;width:960px;padding:0 0 0 16px;}
+
+article 					{display:block;width:600px;padding-bottom:1em;}
+article.fullwidth {width:100%;}
+
+section 			{display:block;}
+section.w600 	{width:600px;}
+
+section.columns2 {
+	width: 100%;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for aside elements */
+aside 			{display:block;margin:0;padding:0;}
+aside.right {float:right;}
+aside.plain {width:300px;font-size:smaller;}
+
+aside.box {
+	width: 250px;
+	margin: 2em 0 1em 0;
+	padding: 0 1em 0 1em;
+	border: 3px dashed #e3e3df;
+	border-top: 3px solid #999999;
+	border-right: 3px solid #999999;
+}
+aside.box p {	font-size: smaller; }
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for figure/pictures */
+figure 						{display:block;margin:2em 0 1em 0;padding:0.5em;}
+figure.right 			{float:right;}
+figure.standard 	{border:4px ridge #999999;}
+figure.strict 		{border:2px solid #eee;}
+figure.inline 		{margin:0;font-size:smaller;}
+figure.w300 			{width:300px;}
+
+figure img {display:block;margin:auto;}
+
+figure figcaption 					{display:block;margin:0 auto;padding:0.5em;}
+figure.standard figcaption 	{text-align:center;font-style:italic;font-size:normal;}
+
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for displaying code */
+blockquote.code {
+	font-family: monospace;
+	white-space: pre;
+}
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for displaying quotes */
+blockquote.quote {
+	padding: 2em 1em 1em 1em;
+	background: #f1f1ef url(../img/quote.png) top left no-repeat;
+	font-style: italic;
+} 
+
+p.quote {
+	padding: 2em 1em 1em 1em;
+	background: #f1f1ef url(../img/quote.png) top right no-repeat;
+	font-style: italic;
+}
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for byline & signature */
+
+footer.byline {
+	display:block;
+	border-top: 1px dashed #999999;
+	margin-top:2em;
+	padding: 1em;
+	color: #555555;
+	font-size: smaller;
+}
+
+footer.byline img {
+	float: right;
+}
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for headers */
+h1,h2,h3,h4,h5,h6 {
+/* inherits font and color from body */
+}
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for paragraphs */
+p {
+/* inherits font and color from body */
+}
+
+p.byline {
+	font-style: italic;
+	font-size:smaller;
+}
+
+p.ingress { }
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for a links */
+a {
+	color: inherit;
+}
+a:link    { }
+a:visited { }
+a:hover   { }
+a:active  { }
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for the footer and related footer elements */
+footer#bottom {
+	display: block;
+	padding: 0 1em 1em 1em;
+	border-top: 1px solid #999999;
+}
+
+/* Link-lists in the footer */
+footer#bottom nav {
+	float: left;
+	padding-left:0.3em;
+	width: 8em;
+	margin-bottom: 2em;
+}
+
+footer#bottom nav h5 { 
+	margin-bottom: 0.5em;
+}
+
+footer#bottom nav a { 
+	display: list-item;
+	list-style: none;
+	color: inherit;
+}
+footer#bottom nav a:link    { }
+footer#bottom nav a:visited { }
+footer#bottom nav a:hover   { }
+footer#bottom nav a:active  { }
+
+/* Final message in the footer */
+footer#bottom div.final {
+	clear: both;
+	font-size: 0.8em;
+}
+
+
