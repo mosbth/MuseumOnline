@@ -45,3 +45,12 @@ footer#bottom nav a {
 	text-decoration:none;
 }
 footer#bottom nav a:hover   { text-decoration:underline;  color: #333333; background: none;}
+
+/* Keep current choice/link highlighted */
+body#home     		a#home-,
+body#excibitions 	a#excibitions-,
+body#articles 		a#articles-,
+body#blog 		 		a#blog-,
+body#forum  			a#forum-,
+body#about   			a#about- {color:#f5f5f5;background:#999999;}
+

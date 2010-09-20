@@ -26,7 +26,14 @@ header#top nav a:after {content:" |";}
 header#top nav a:hover {background:white;color:#000000;}
 
 h1,h2,h3,h4,h5,h6 {font-family:Georgia,serif;}
-h1 {color:#147733;}
 
 footer#bottom {background:#FFFDF1;border-top:5px double black;}
-footer#bottom nav h5 {color:#773533;}
+
+/* Keep current choice/link highlighted */
+body#home     		a#home-,
+body#excibitions 	a#excibitions-,
+body#articles 		a#articles-,
+body#blog 		 		a#blog-,
+body#forum  			a#forum-,
+body#about   			a#about- {color:black;background:transparent;}
+

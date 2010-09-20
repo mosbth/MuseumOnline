@@ -21,3 +21,12 @@ header#top nav a:hover {
 }
 
 footer#bottom {background:#E5F7FD;border-top:1px solid #7FD7F7;}
+
+/* Keep current choice/link highlighted */
+body#home     		a#home-,
+body#excibitions 	a#excibitions-,
+body#articles 		a#articles-,
+body#blog 		 		a#blog-,
+body#forum  			a#forum-,
+body#about   			a#about- {color:#FFFFFF;background:#31526F;}
+
